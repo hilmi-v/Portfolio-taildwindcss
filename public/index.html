@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body class="font-inter scroll-smooth transition-all  dark:bg-slate-900">
+  <!-- header Start -->
+  <header
+    class="bg-transparent fixed top-0 left-0 w-full flex items-center z-50 bg-third bg-opacity-95 backdrop-blur-md">
+    <div class="container lg:pl-16 pl-2 mx-auto">
+      <div class="flex items-center justify-between relative ">
+        <div class="">
+          <a href="#" class="font-bold text-primary block py-5">MhilmiA</a>
+        </div>
+
+        <div class="flex items-center px-4 ml-4">
+          <!-- hamburger -->
+          <button id="hamburger" name="hamburger" type="button" class="block absolute right-2 lg:hidden">
+            <span class="hamburger-line origin-top-left transition-all duration-300"></span>
+            <span class="hamburger-line transition-all duration-300"></span>
+            <span class="hamburger-line origin-bottom-left transition-all duration-300 "></span>
+          </button>
+          <nav id="hamburger-item"
+            class="absolute py-5 bg-third shadow-lg rounded-lg max-w-[200px] w-full hidden right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none ">
+            <ul class="block lg:flex">
+              <li class="group">
+                <a href="#home" class="text-base text-white group-hover:text-blue-500 py-2 mx-8 flex ">home</a>
+              </li>
+              <li class="group">
+                <a href="#about" class="text-base text-white group-hover:text-blue-500 py-2 mx-8 flex ">About</a>
+              </li>
+              <li class="group">
+                <a href="#portofolio"
+                  class="text-base text-white group-hover:text-blue-500 py-2 mx-8 flex ">Portofolio</a>
+              </li>
+              <li class="group">
+                <a href="#programming"
+                  class="text-base text-white group-hover:text-blue-500 py-2 mx-8 flex ">programming</a>
+              </li>
+              <li class="group">
+                <a href="#certificate"
+                  class="text-base text-white group-hover:text-blue-500 py-2 mx-8 flex ">certificate</a>
+              </li>
+              <li class="lg:flex">
+                <div class="flex justify-center items-center">
+                  <label for="darkmode" class="flex justify-center items-center">
+                    <span class="mr-2 text-white"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-brightness-high" viewBox="0 0 16 16">
+                        <path
+                          d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708" />
+                      </svg></span>
+                    <input type="checkbox" id="darkmode" class="hidden" />
+                    <div
+                      class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-600 px-1 hover:ring-1 hover:outline-1 outline-sky-400 ring-sky-400">
+                      <div class="darkmode-cirle h-4 w-4 rounded-full bg-slate-100 dark:translate-x-3"></div>
+                    </div>
+                    <span class="ml-2 text-white"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
+                        <path
+                          d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286" />
+                      </svg></span>
+                  </label>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+    </div>
+  </header>
+  <!-- header end -->
+
+  <!-- main Profile start -->
+  <section id="home" class="mt-0 mb-10 pt-20 transition-all  dark:bg-slate-900 ">
+    <div class="container mx-auto">
+      <div class="flex flex-wrap">
+        <div class="my-7 w-full self-center px-4 lg:w-1/2 lg:pl-16">
+          <!-- text -->
+          <h1 class="font-bold text-primary lg:text-4xl dark:text-white">
+            Hai, I am
+            <span class="mt-1 block text-4xl font-bold text-slate-800 md:text-5xl lg:text-7xl dark:text-primary">Muhamad Hilmi
+              Alfalah</span>
+          </h1>
+          <h1 class="lg:text-2x mb-5 text-sm font-medium text-slate-600 dark:text-white">
+            Student in SMK Mahaputra
+          </h1>
+
+          <button
+            class="shadow-ms rounded-full bg-primary px-4 py-1 font-semibold text-white shadow-black hover:scale-105 hover:opacity-80 lg:text-xl lg:font-bold">
+            <a href="mailto:alfalahhilmi@gmail.com"> Contact me </a>
+          </button>
+        </div>
+        <div class="w-full self-end px-4 lg:w-1/2">
+          <div class="bg-primary rounded-full max-w-fit lg:ml-28 hover:scale-110 group animation-all duration-300 dark:shadow-yellow-200 dark:shadow-lg">
+            <img src="./img/PROFILE.png" alt="profile"
+              class="rounded-full mx-auto max-w-full group-hover:scale-100 animation-all duration-300" />
+          </div>
+          <!-- <div class=" mt-14 lg: lg:mt-1 group">
+              <div class=" max-w-full rounded-full mx-auto flex items-end justify-center p-2 bg-primary overflow-visible"
+                ><img
+                  src="./img/PROFILE.png"
+                  alt="profile"
+                  class="rounded-full mx-auto max-w-full group-hover:scale-110 animation-all duration-300"
+              /></div> -->
+          <!-- <span
+                class="absolute bottom-0 left-1/2 top-1 -z-10 -translate-x-1/2 lg:scale-125"
+              >
+                <svg
+                  class="group-hover:scale-150 group-hover:rotate-12 animation-all duration-300"
+                  width="400px"
+                  heigh="400px"
+                  viewBox="0 0 200 200"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill="#FFD700"
+                    d="M39.2,-70.8C50.7,-61.3,59.9,-50.6,67.7,-38.6C75.5,-26.6,81.8,-13.3,81.2,-0.4C80.5,12.6,73,25.2,66.3,39C59.5,52.8,53.7,67.8,42.8,75.1C31.9,82.4,15.9,82,0.4,81.3C-15.1,80.5,-30.2,79.5,-42.3,72.9C-54.5,66.3,-63.7,54.2,-70.7,41.1C-77.7,28.1,-82.4,14,-83.6,-0.6C-84.7,-15.3,-82.2,-30.7,-75.2,-43.8C-68.2,-56.9,-56.8,-67.8,-43.6,-76.2C-30.3,-84.7,-15.1,-90.8,-0.6,-89.7C13.8,-88.5,27.7,-80.2,39.2,-70.8Z"
+                    transform="translate(100 100) "
+                  />
+                </svg>
+              </span> -->
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- main Profile end-->
+
+
+
+  <!-- about start -->
+  <section id="about" class="mt-10 transition-all  dark:bg-slate-900">
+    <div class="container mx-auto">
+      <div class="flex w-full flex-wrap justify-center">
+        <div class="mb-3  px-4 lg:w-1/2 lg:pl-16">
+          <h1 class="mb-5 text-lg md:text-xl lg:text-2xl font-bold uppercase text-primary">
+            About Me
+          </h1>
+          <h2 class="mb-3 text-2xl font-bold text-second dark:text-white">
+            Siapa itu <span>Muhamad Hilmi alfalah</span>?
+          </h2>
+          <p class="max-w-xl font-medium  text-first first-letter:text-4xl dark:text-white">
+            Muhamad Hilmi Alfalah. Saya saat ini adalah seorang siswa di SMK
+            Mahaputra Cerdas Utama. Saya memiliki minat yang besar akan
+            perkembangan dunia teknologi. Dengan latar belakang pendidikan
+            pada bidang pengembangan perangkat lunak, saya telah mendapatkan
+            pemahaman dan pengamalan yang kuat akan hal tersebut, dan berharap
+            dapat memanfaatkannya sebaik mungkin
+          </p>
+        </div>
+
+        <div class="my-4 w-full px-4 lg:w-1/2 lg:pl-16">
+          <h1 class="text-lg font-bold uppercase text-primary md:text-xl lg:text-2xl">
+            Lets be Friend
+          </h1>
+          <p class="max-w-xl font-medium text-second dark:text-white">
+            All my sosial media :
+          </p>
+          <div class="my-4 flex items-center md:inline-block">
+            <!-- facebook -->
+            <a href="https://www.facebook.com/mhilmi.alfalah.3?mibextid=JRoKGi" class="flex items-center mb-2 group">
+              <span
+                class=" mr-2 h-9 w-9 flex items-center justify-center rounded-full border border-slate-400 text-third group-hover:text-white group-hover:bg-primary group-hover:border-primary dark:text-white"
+                target="_blank">
+                <svg role="img" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <title>Facebook</title>
+                  <path
+                    d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z" />
+                </svg>
+              </span><span class="hidden md:inline group-hover:text-primary dark:text-white"> Mhilmi Al-falah</span>
+            </a>
+            <!-- instagram -->
+            <a href="https://www.instagram.com/mhilmi_0221?igsh=N2oyazhzb3N6emlp" class="flex items-center mb-2 group">
+              <span
+                class="mr-2 h-9 w-9 flex items-center justify-center rounded-full border border-slate-400 text-third group-hover:text-white group-hover:bg-primary group-hover:border-primary dark:text-white"
+                target="_blank">
+                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="fill-current">
+                  <title>Instagram</title>
+                  <path
+                    d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077" />
+                </svg>
+              </span><span class="hidden md:inline group-hover:text-primary dark:text-white"> mhilmi_0221</span>
+            </a>
+            <!-- github -->
+            <a href="github.com/hilmi" class="flex items-center mb-2 group">
+
+              <span href="https://www.github.com/hilmi-v"
+                class="mr-2 h-9 w-9 flex items-center justify-center rounded-full border border-slate-400 text-third group-hover:text-white group-hover:bg-primary group-hover:border-primary dark:text-white"
+                target="_blank">
+                <svg role="img" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <title>GitHub</title>
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                </svg>
+              </span> <span class="hidden md:inline group-hover:text-primary dark:text-white"> hilmi-v</span>
+
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- about end -->
+
+  <!-- protofolio start -->
+  <section id="portofolio" class="bg-slate-100 py-10 mt-4 mb-0 transition-all  dark:bg-slate-800">
+    <div class="container  w-full mx-auto">
+      <div class="max-w-xl mx-auto text-center mb-12">
+        <h1 class="mb-5 text-xl md:text-2xl lg:text-3xl font-bold uppercase text-primary">
+          Portofolio
+        </h1>
+        <p class="font-medium text-lg dark:text-white">Beberapa Project yang pernah dilakukan</p>
+      </div>
+
+
+      <div class="w-full px-5 flex flex-wrap justify-center">
+        <div class=" p-4 md:w-1/2 lx:w-1/3 group">
+          <div class="rounded-md shadow-md overflow-hidden mb-4 group-hover:scale-95 transition-all duration-300 ">
+            <img src="./img/p1.png" alt="blog portofolio" width="w-full">
+          </div>
+          <h1 class="font-semibold text-second text-base md:text-lg lg:text-xl dark:text-white">Website Portofolio</h1>
+          <p class="text-sm md:text-base font-light text-first lg:text-lg dark:text-white">membuat sebuah website portofolio menggunakan framework tailwind</p>
+        </div>
+        <div class=" p-4 md:w-1/2 lx:w-1/3 group">
+          <div class="rounded-md shadow-md overflow-hidden mb-4 group-hover:scale-95 transition-all duration-300">
+            <img src="./img/p2.png" alt="blog portofolio" width="w-full">
+          </div>
+          <h1 class="font-semibold text-second text-base md:text-lg lg:text-xl dark:text-white">Simple CRUD</h1>
+          <p class="text-sm md:text-base font-light text-first lg:text-lg dark:text-white">membuat sebuah program crud simple menggunakan framework laravel</p>
+        </div>
+        <div class=" p-4 md:w-1/2 lx:w-1/3 group">
+          <div class="rounded-md shadow-md overflow-hidden mb-4 group-hover:scale-95 transition-all duration-300">
+            <img src="./img/p3.png" alt="blog portofolio" width="w-full">
+          </div>
+          <h1 class="font-semibold text-second text-base md:text-lg lg:text-xl dark:text-white">ui design</h1>
+          <p class="text-sm md:text-base font-light text-first lg:text-lg dark:text-white">membuat ui untuk rancangan sebuah aplikasi e-commerce </p>
+        </div>
+        <div class=" p-4 md:w-1/2 lx:w-1/3 group">
+          <div class="rounded-md shadow-md overflow-hidden mb-4 group-hover:scale-95 transition-all duration-300">
+            <img src="./img/p4.png" alt="blog portofolio" width="w-full">
+          </div>
+          <h1 class="font-semibold text-second text-base md:text-lg lg:text-xl dark:text-white">Arduino solenoid door</h1>
+          <p class="text-sm md:text-base font-light text-first lg:text-lg dark:text-white">membuat program arduino dengan module rfid, led, dan solenoid door</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- portofolio end-->
+
+  <!-- language Programming start -->
+  <section id="programming" class="bg-second py-10 mt-0 mb-0 ">
+    <div class="mx-auto container lg:pl-16">
+      <div class="max-w-xl mx-auto text-center mb-12">
+        <h1 class="mb-5 text-xl md:text-2xl lg:text-3xl font-bold uppercase text-primary">
+          Programming Language
+        </h1>
+        <p class="font-medium text-lg text-white">Bahasa Pemograman yang dikuasai</p>
+      </div>
+
+      <div class="w-full">
+        <div class="flex flex-wrap items-center justify-center">
+          <div class=" p-2 w-full max-w-[120px] m-8 text-white hover:text-yellow-400">
+            <svg class="fill-current" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <title>JavaScript</title>
+              <path
+                d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z" />
+            </svg>
+            <p class="text-center py-2">JavaScript</p>
+          </div>
+
+          <div class=" p-2 w-full max-w-[120px] m-8 text-white hover:text-purple-500">
+            <svg class="fill-current" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <title>PHP</title>
+              <path
+                d="M7.01 10.207h-.944l-.515 2.648h.838c.556 0 .97-.105 1.242-.314.272-.21.455-.559.55-1.049.092-.47.05-.802-.124-.995-.175-.193-.523-.29-1.047-.29zM12 5.688C5.373 5.688 0 8.514 0 12s5.373 6.313 12 6.313S24 15.486 24 12c0-3.486-5.373-6.312-12-6.312zm-3.26 7.451c-.261.25-.575.438-.917.551-.336.108-.765.164-1.285.164H5.357l-.327 1.681H3.652l1.23-6.326h2.65c.797 0 1.378.209 1.744.628.366.418.476 1.002.33 1.752a2.836 2.836 0 0 1-.305.847c-.143.255-.33.49-.561.703zm4.024.715l.543-2.799c.063-.318.039-.536-.068-.651-.107-.116-.336-.174-.687-.174H11.46l-.704 3.625H9.388l1.23-6.327h1.367l-.327 1.682h1.218c.767 0 1.295.134 1.586.401s.378.7.263 1.299l-.572 2.944h-1.389zm7.597-2.265a2.782 2.782 0 0 1-.305.847c-.143.255-.33.49-.561.703a2.44 2.44 0 0 1-.917.551c-.336.108-.765.164-1.286.164h-1.18l-.327 1.682h-1.378l1.23-6.326h2.649c.797 0 1.378.209 1.744.628.366.417.477 1.001.331 1.751zM17.766 10.207h-.943l-.516 2.648h.838c.557 0 .971-.105 1.242-.314.272-.21.455-.559.551-1.049.092-.47.049-.802-.125-.995s-.524-.29-1.047-.29z" />
+            </svg>
+            <p class="text-center py-2">PHP</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+  <!-- language Programming end-->
+
+  <!-- certificate start -->
+  <section id="certificate" class="bg-slate-100 pb-6 transition-all  dark:bg-slate-800">
+    <div class="container mx-auto lg:pl-16">
+      <div class="max-w-xl mx-auto text-center mb-12 pt-4">
+        <h1 class="mb-5 text-xl md:text-2xl  lg:text-3xl dark:text-white font-bold uppercase text-primary pt-4">
+          Sertificate
+        </h1>
+      </div>
+      <div class="flex flex-wrap justify-center">
+
+        <div
+          class=" md:w-1/2 p-4 rounded-lg shadow-xl overflow-hidden mb-4 group-hover:scale-95 transition-all duration-300 ">
+          <img src="./img/s1.png" alt="blog portofolio" width="w-full">
+          <p class="text-center font-semibold text-base md:text-lg dark:text-white text-second">IOT Competition</p>
+          <p class="text-center text-sm font-light dark:text-white text-first">mengikuti perlombaan IOT pada 2024</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- certificate end -->
+
+  <!-- footer start-->
+  <footer class="bg-third text-slate-100">
+    <div class="container pl-7 mx-auto">
+      <div class="flex flex-wrap pt-8 w-full ">
+        <div class="flex items-center justify-center mb-8 md:w-1/3 my-8">
+          <h1 class="font-bold text-white text-3xl">Muhamad Hilmi Alfalah <p class="text-xl font-medium">
+              alfalahhilmi@gmail.com</p>
+          </h1>
+        </div>
+        <div class="mb-8 md:w-1/3 my-8 w-full">
+          <h1 class="font-bold text-white text-xl">Social</h1>
+          <div class="my-4  items-center inline-block">
+            <!-- facebook -->
+            <a href="https://www.facebook.com/mhilmi.alfalah.3?mibextid=JRoKGi" class="flex items-center mb-2 group">
+              <span
+                class=" mr-2 h-9 w-9 flex items-center justify-center rounded-full border border-slate-400  group-hover:text-white group-hover:bg-primary group-hover:border-primary"
+                target="_blank">
+                <svg role="img" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <title>Facebook</title>
+                  <path
+                    d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z" />
+                </svg>
+              </span><span class="inline group-hover:text-primary"> Mhilmi Al-falah</span>
+            </a>
+            <!-- instagram -->
+            <a href="https://www.instagram.com/mhilmi_0221?igsh=N2oyazhzb3N6emlp" class="flex items-center mb-2 group">
+              <span
+                class="mr-2 h-9 w-9 flex items-center justify-center rounded-full border border-slate-400  group-hover:text-white group-hover:bg-primary group-hover:border-primary"
+                target="_blank">
+                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="fill-current">
+                  <title>Instagram</title>
+                  <path
+                    d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077" />
+                </svg>
+              </span><span class="inline group-hover:text-primary"> mhilmi_0221</span>
+            </a>
+            <!-- github -->
+            <a href="github.com/hilmi" class="flex items-center mb-2 group">
+
+              <span href="https://www.github.com/hilmi-v"
+                class="mr-2 h-9 w-9 flex items-center justify-center rounded-full border border-slate-400  group-hover:text-white group-hover:bg-primary group-hover:border-primary"
+                target="_blank">
+                <svg role="img" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <title>GitHub</title>
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                </svg>
+              </span> <span class=" group-hover:text-primary"> hilmi-v</span>
+
+            </a>
+          </div>
+        </div>
+        <div class="mb-8 md:w-1/3 my-8 w-full">
+          <h1 class="font-bold text-white text-xl">Link</h1>
+          <ul>
+            <li class="p-1"><a href="#home">Home</a></li>
+            <li class="p-1"><a href="#about">About me</a></li>
+            <li class="p-1"><a href="#portofolio">portofolio</a></li>
+            <li class="p-1"><a href="#programming">programming</a></li>
+            <li class="p-1"><a href="#certificate">certificate</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="text-xs text-center w-full pt-4 border-t border-slate-700 pb-2">
+        Created By Muhammad Hilmi Alfalah using Tailwind CSS | 2024
+      </div>
+    </div>
+  </footer>
+  <!-- footer end-->
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
